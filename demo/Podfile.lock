@@ -1,5 +1,5 @@
 PODS:
-  - GrooveLion (2.0.0)
+  - GrooveLion (2.0.1)
 
 DEPENDENCIES:
   - GrooveLion (from `../GrooveLion.podspec`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../GrooveLion.podspec
 
 SPEC CHECKSUMS:
-  GrooveLion: a7711be8a3d30654bebbef3c081468926260c972
+  GrooveLion: d2601f7e370184acc19c30754d69e17e58924c07
 
 COCOAPODS: 0.33.1
