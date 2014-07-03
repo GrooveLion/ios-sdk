@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GrooveLion"
-  s.version      = "1.0.0"
+  s.version      = "2.0.0"
   s.summary      = "SDK for the Groove Lion Enterprise-Class Push Notification Platform"
 
   s.description  = <<-DESC
@@ -14,14 +14,14 @@ Pod::Spec.new do |s|
 
   s.homepage     = "http://www.groovelion.com/"
 
-  s.license = { :type=>'Commercial', :file => "LICENSE.txt" }
+  s.license = { :type=>'MIT', :file => "LICENSE.txt" }
 
   s.authors            = "Groove Lion SDK Team"
   s.social_media_url   = "http://twitter.com/getgroovelion"
 
   s.platform     = :ios, "6.0"
 
-  s.source       = { :git => "git@github.com:dotankstudios/dotank-library.git", :branch => "groove-lion-sdk" }
+  s.source       = { :git => "https://github.com/GrooveLion/ios-sdk.git", :tag => "2.0.0" }
 
   s.source_files = 'SDK/*.{h,m}'
   s.public_header_files = "SDK/GrooveLion.h"

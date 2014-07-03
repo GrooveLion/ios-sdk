@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "http://www.groovelion.com/"
 
-  s.license = { :type=>'Commercial', :file => "LICENSE.txt" }
+  s.license = { :type=>'MIT', :file => "LICENSE.txt" }
 
   s.authors            = "Groove Lion SDK Team"
   s.social_media_url   = "http://twitter.com/getgroovelion"

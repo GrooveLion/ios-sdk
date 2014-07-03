@@ -8,7 +8,7 @@
 
 // GrooveLion
 #define COCOAPODS_POD_AVAILABLE_GrooveLion
-#define COCOAPODS_VERSION_MAJOR_GrooveLion 1
+#define COCOAPODS_VERSION_MAJOR_GrooveLion 2
 #define COCOAPODS_VERSION_MINOR_GrooveLion 0
 #define COCOAPODS_VERSION_PATCH_GrooveLion 0
 
