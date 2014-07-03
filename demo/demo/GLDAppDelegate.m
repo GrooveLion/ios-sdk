@@ -18,7 +18,8 @@
     GLECentral *groovelion = [GLECentral sharedGrooveLion];
     [groovelion application:application didFinishLaunchingWithOptions:launchOptions];
     GLDLocationTracker *tracker = [GLDLocationTracker sharedLocationTracker];
-    [tracker addMonitoringDelegate:groovelion];
+    if (groovelion)
+        [tracker addMonitoringDelegate:groovelion];
     if (launchOptions[UIApplicationLaunchOptionsLocationKey])
     {
         [tracker.locationManager startMonitoringSignificantLocationChanges];
