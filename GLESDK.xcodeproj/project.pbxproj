@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		4A3E394418C47C6500C790D9 /* Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4A3E394518C47C6500C790D9 /* Build configuration list for PBXAggregateTarget "Universal" */;
+			buildPhases = (
+				4A3E394818C47C7F00C790D9 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Universal;
+			productName = Universal;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		4A0C396818C48E7F005E9FAB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0C396718C48E7F005E9FAB /* XCTest.framework */; };
+		4A0C396918C48E7F005E9FAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9DBDED1666354E00E5D20C /* Foundation.framework */; };
+		4A0C396B18C48E7F005E9FAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0C396A18C48E7F005E9FAB /* UIKit.framework */; };
+		4A0C397118C48E7F005E9FAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A0C396F18C48E7F005E9FAB /* InfoPlist.strings */; };
+		4A0C397318C48E7F005E9FAB /* GLE_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C397218C48E7F005E9FAB /* GLE_Tests.m */; };
+		4A0C397A18C48E95005E9FAB /* libGLESDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9DBDEA1666354E00E5D20C /* libGLESDK.a */; };
+		4A0C397D18C48F42005E9FAB /* GLETest_faketp.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C397C18C48F42005E9FAB /* GLETest_faketp.m */; };
+		4A0C397F18C4CC54005E9FAB /* GLE_RegistrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C397E18C4CC54005E9FAB /* GLE_RegistrationTests.m */; };
+		4A0C398218C4CD26005E9FAB /* GLE_SegmentTransactionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C398118C4CD26005E9FAB /* GLE_SegmentTransactionTests.m */; };
+		4A0C398518C4CDEE005E9FAB /* GLE_SegmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C398418C4CDEE005E9FAB /* GLE_SegmentTests.m */; };
+		4A0C398718C4D043005E9FAB /* GLE_AcknowledgementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C398618C4D043005E9FAB /* GLE_AcknowledgementTests.m */; };
+		4A0C398918C4D27D005E9FAB /* GLE_LocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C398818C4D27D005E9FAB /* GLE_LocationTests.m */; };
+		4A0C398B18C4D3B3005E9FAB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0C398A18C4D3B3005E9FAB /* CoreLocation.framework */; };
+		4A193A1118E190F800ED6DD0 /* GLE_CustomerIdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A193A1018E190F800ED6DD0 /* GLE_CustomerIdTests.m */; };
+		4A3E394B18C47FEF00C790D9 /* GLESegmentTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3E394A18C47FEF00C790D9 /* GLESegmentTransaction.m */; };
+		4A9DBDEE1666354E00E5D20C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9DBDED1666354E00E5D20C /* Foundation.framework */; };
+		4A9DBDFD1666356600E5D20C /* GLEMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9DBDFB1666356600E5D20C /* GLEMain.m */; };
+		4AFF38AA19349ACF006F4424 /* GLESegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF38A819349ACF006F4424 /* GLESegment.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A0C397518C48E7F005E9FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A9DBDE11666354E00E5D20C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A9DBDE91666354E00E5D20C;
+			remoteInfo = DTPush;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A9DBDE81666354E00E5D20C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4A0C396618C48E7F005E9FAB /* GLESDK Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GLESDK Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A0C396718C48E7F005E9FAB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4A0C396A18C48E7F005E9FAB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		4A0C396E18C48E7F005E9FAB /* GLESDK Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLESDK Tests-Info.plist"; sourceTree = "<group>"; };
+		4A0C397018C48E7F005E9FAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4A0C397218C48E7F005E9FAB /* GLE_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLE_Tests.m; sourceTree = "<group>"; };
+		4A0C397418C48E7F005E9FAB /* GLESDK Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLESDK Tests-Prefix.pch"; sourceTree = "<group>"; };
+		4A0C397B18C48F42005E9FAB /* GLETest_faketp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLETest_faketp.h; sourceTree = "<group>"; };
+		4A0C397C18C48F42005E9FAB /* GLETest_faketp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLETest_faketp.m; sourceTree = "<group>"; };
+		4A0C397E18C4CC54005E9FAB /* GLE_RegistrationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLE_RegistrationTests.m; sourceTree = "<group>"; };
+		4A0C398018C4CC84005E9FAB /* GLE_Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLE_Tests.h; sourceTree = "<group>"; };
+		4A0C398118C4CD26005E9FAB /* GLE_SegmentTransactionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLE_SegmentTransactionTests.m; sourceTree = "<group>"; };
+		4A0C398418C4CDEE005E9FAB /* GLE_SegmentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLE_SegmentTests.m; sourceTree = "<group>"; };
+		4A0C398618C4D043005E9FAB /* GLE_AcknowledgementTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLE_AcknowledgementTests.m; sourceTree = "<group>"; };
+		4A0C398818C4D27D005E9FAB /* GLE_LocationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLE_LocationTests.m; sourceTree = "<group>"; };
+		4A0C398A18C4D3B3005E9FAB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4A193A1018E190F800ED6DD0 /* GLE_CustomerIdTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLE_CustomerIdTests.m; sourceTree = "<group>"; };
+		4A3E394A18C47FEF00C790D9 /* GLESegmentTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLESegmentTransaction.m; sourceTree = "<group>"; };
+		4A3E394C18C482AC00C790D9 /* UniversalBuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = UniversalBuild.sh; sourceTree = "<group>"; };
+		4A9DBDEA1666354E00E5D20C /* libGLESDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGLESDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A9DBDED1666354E00E5D20C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4A9DBDF11666354E00E5D20C /* GLESDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLESDK-Prefix.pch"; sourceTree = "<group>"; };
+		4A9DBDFB1666356600E5D20C /* GLEMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLEMain.m; sourceTree = "<group>"; };
+		4A9DBDFC1666356600E5D20C /* GrooveLion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrooveLion.h; sourceTree = "<group>"; };
+		4AFF38A819349ACF006F4424 /* GLESegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLESegment.m; sourceTree = "<group>"; };
+		4AFF38AB19349BCD006F4424 /* GLEInternals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLEInternals.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A0C396318C48E7F005E9FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A0C398B18C4D3B3005E9FAB /* CoreLocation.framework in Frameworks */,
+				4A0C396818C48E7F005E9FAB /* XCTest.framework in Frameworks */,
+				4A0C396B18C48E7F005E9FAB /* UIKit.framework in Frameworks */,
+				4A0C397A18C48E95005E9FAB /* libGLESDK.a in Frameworks */,
+				4A0C396918C48E7F005E9FAB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A9DBDE71666354E00E5D20C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A9DBDEE1666354E00E5D20C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A0C396C18C48E7F005E9FAB /* SDK Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4A0C398018C4CC84005E9FAB /* GLE_Tests.h */,
+				4A0C397218C48E7F005E9FAB /* GLE_Tests.m */,
+				4A0C397E18C4CC54005E9FAB /* GLE_RegistrationTests.m */,
+				4A0C398418C4CDEE005E9FAB /* GLE_SegmentTests.m */,
+				4A0C398118C4CD26005E9FAB /* GLE_SegmentTransactionTests.m */,
+				4A0C398618C4D043005E9FAB /* GLE_AcknowledgementTests.m */,
+				4A0C398818C4D27D005E9FAB /* GLE_LocationTests.m */,
+				4A193A1018E190F800ED6DD0 /* GLE_CustomerIdTests.m */,
+				4A0C396D18C48E7F005E9FAB /* Supporting Files */,
+				4A0C397B18C48F42005E9FAB /* GLETest_faketp.h */,
+				4A0C397C18C48F42005E9FAB /* GLETest_faketp.m */,
+			);
+			path = "SDK Tests";
+			sourceTree = "<group>";
+		};
+		4A0C396D18C48E7F005E9FAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A0C396E18C48E7F005E9FAB /* GLESDK Tests-Info.plist */,
+				4A0C396F18C48E7F005E9FAB /* InfoPlist.strings */,
+				4A0C397418C48E7F005E9FAB /* GLESDK Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A9DBDDF1666354E00E5D20C = {
+			isa = PBXGroup;
+			children = (
+				4A9DBDEF1666354E00E5D20C /* SDK */,
+				4A0C396C18C48E7F005E9FAB /* SDK Tests */,
+				4A9DBDEC1666354E00E5D20C /* Frameworks */,
+				4A9DBDEB1666354E00E5D20C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A9DBDEB1666354E00E5D20C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A9DBDEA1666354E00E5D20C /* libGLESDK.a */,
+				4A0C396618C48E7F005E9FAB /* GLESDK Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A9DBDEC1666354E00E5D20C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A0C398A18C4D3B3005E9FAB /* CoreLocation.framework */,
+				4A9DBDED1666354E00E5D20C /* Foundation.framework */,
+				4A0C396718C48E7F005E9FAB /* XCTest.framework */,
+				4A0C396A18C48E7F005E9FAB /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A9DBDEF1666354E00E5D20C /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				4A9DBDFC1666356600E5D20C /* GrooveLion.h */,
+				4AFF38AB19349BCD006F4424 /* GLEInternals.h */,
+				4A9DBDFB1666356600E5D20C /* GLEMain.m */,
+				4AFF38A819349ACF006F4424 /* GLESegment.m */,
+				4A3E394A18C47FEF00C790D9 /* GLESegmentTransaction.m */,
+				4A9DBDF01666354E00E5D20C /* Supporting Files */,
+				4A3E394C18C482AC00C790D9 /* UniversalBuild.sh */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		4A9DBDF01666354E00E5D20C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A9DBDF11666354E00E5D20C /* GLESDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A0C396518C48E7F005E9FAB /* GLESDK Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A0C397718C48E7F005E9FAB /* Build configuration list for PBXNativeTarget "GLESDK Tests" */;
+			buildPhases = (
+				4A0C396218C48E7F005E9FAB /* Sources */,
+				4A0C396318C48E7F005E9FAB /* Frameworks */,
+				4A0C396418C48E7F005E9FAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A0C397618C48E7F005E9FAB /* PBXTargetDependency */,
+			);
+			name = "GLESDK Tests";
+			productName = "DTPush Tests";
+			productReference = 4A0C396618C48E7F005E9FAB /* GLESDK Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A9DBDE91666354E00E5D20C /* GLESDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A9DBDF81666354E00E5D20C /* Build configuration list for PBXNativeTarget "GLESDK" */;
+			buildPhases = (
+				4A9DBDE61666354E00E5D20C /* Sources */,
+				4A9DBDE71666354E00E5D20C /* Frameworks */,
+				4A9DBDE81666354E00E5D20C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLESDK;
+			productName = DTPush;
+			productReference = 4A9DBDEA1666354E00E5D20C /* libGLESDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A9DBDE11666354E00E5D20C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Do Tank Studios";
+				TargetAttributes = {
+					4A0C396518C48E7F005E9FAB = {
+						TestTargetID = 4A9DBDE91666354E00E5D20C;
+					};
+				};
+			};
+			buildConfigurationList = 4A9DBDE41666354E00E5D20C /* Build configuration list for PBXProject "GLESDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4A9DBDDF1666354E00E5D20C;
+			productRefGroup = 4A9DBDEB1666354E00E5D20C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A9DBDE91666354E00E5D20C /* GLESDK */,
+				4A3E394418C47C6500C790D9 /* Universal */,
+				4A0C396518C48E7F005E9FAB /* GLESDK Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A0C396418C48E7F005E9FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A0C397118C48E7F005E9FAB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A3E394818C47C7F00C790D9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+				"$(SYMROOT)/Release-universal/libGLESDK.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "exec ${SRCROOT}/SDK/UniversalBuild.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A0C396218C48E7F005E9FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A0C398218C4CD26005E9FAB /* GLE_SegmentTransactionTests.m in Sources */,
+				4A0C398918C4D27D005E9FAB /* GLE_LocationTests.m in Sources */,
+				4A0C397F18C4CC54005E9FAB /* GLE_RegistrationTests.m in Sources */,
+				4A0C398718C4D043005E9FAB /* GLE_AcknowledgementTests.m in Sources */,
+				4A193A1118E190F800ED6DD0 /* GLE_CustomerIdTests.m in Sources */,
+				4A0C397D18C48F42005E9FAB /* GLETest_faketp.m in Sources */,
+				4A0C398518C4CDEE005E9FAB /* GLE_SegmentTests.m in Sources */,
+				4A0C397318C48E7F005E9FAB /* GLE_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A9DBDE61666354E00E5D20C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A3E394B18C47FEF00C790D9 /* GLESegmentTransaction.m in Sources */,
+				4AFF38AA19349ACF006F4424 /* GLESegment.m in Sources */,
+				4A9DBDFD1666356600E5D20C /* GLEMain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A0C397618C48E7F005E9FAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A9DBDE91666354E00E5D20C /* GLESDK */;
+			targetProxy = 4A0C397518C48E7F005E9FAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A0C396F18C48E7F005E9FAB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A0C397018C48E7F005E9FAB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A0C397818C48E7F005E9FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SDK Tests/GLESDK Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "SDK Tests/GLESDK Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "GLESDK Tests";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4A0C397918C48E7F005E9FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SDK Tests/GLESDK Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "SDK Tests/GLESDK Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "GLESDK Tests";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		4A3E394618C47C6500C790D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4A3E394718C47C6500C790D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4A9DBDF61666354E00E5D20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4A9DBDF71666354E00E5D20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A9DBDF91666354E00E5D20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GLESDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SDK/GLESDK-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4A9DBDFA1666354E00E5D20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GLESDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SDK/GLESDK-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A0C397718C48E7F005E9FAB /* Build configuration list for PBXNativeTarget "GLESDK Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A0C397818C48E7F005E9FAB /* Debug */,
+				4A0C397918C48E7F005E9FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A3E394518C47C6500C790D9 /* Build configuration list for PBXAggregateTarget "Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A3E394618C47C6500C790D9 /* Debug */,
+				4A3E394718C47C6500C790D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A9DBDE41666354E00E5D20C /* Build configuration list for PBXProject "GLESDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A9DBDF61666354E00E5D20C /* Debug */,
+				4A9DBDF71666354E00E5D20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A9DBDF81666354E00E5D20C /* Build configuration list for PBXNativeTarget "GLESDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A9DBDF91666354E00E5D20C /* Debug */,
+				4A9DBDFA1666354E00E5D20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A9DBDE11666354E00E5D20C /* Project object */;
+}

@@ -1,0 +1,25 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#import "GLETest_faketp.h"
+#import "GrooveLion.h"
+
+extern NSString * const kGLEDeferredOpensKey;
+extern NSString * const kGLEMetaKey;
+extern NSString * const kGLEMetaRegisteredKey;
+
+@interface GLECentral ()
+    
++(BOOL)testingEnabled;
++(void)setTestingEnabled:(BOOL)enabled;
++(void)resetSharedObject;
+
+@end
