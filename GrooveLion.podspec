@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GrooveLion"
-  s.version      = "2.0.1"
+  s.version      = "2.0.2"
   s.summary      = "SDK for the Groove Lion Enterprise-Class Push Notification Platform"
 
   s.description  = <<-DESC
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "6.0"
 
-  s.source       = { :git => "https://github.com/GrooveLion/ios-sdk.git", :tag => "2.0.1" }
+  s.source       = { :git => "https://github.com/GrooveLion/ios-sdk.git", :tag => s.version.to_s }
 
   s.source_files = 'SDK/*.{h,m}'
   s.public_header_files = "SDK/GrooveLion.h"
