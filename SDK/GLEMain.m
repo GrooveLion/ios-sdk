@@ -4,13 +4,7 @@
 static BOOL isTesting = NO;
 #endif
 
-static BOOL debugLogging
-#if DEBUG
-= YES
-#else
-= NO
-#endif
-;
+static BOOL debugLogging = NO;
 
 #undef DLog
 #define DLog(...) do { if (debugLogging) NSLog(__VA_ARGS__); } while (0)
@@ -689,12 +683,18 @@ static dispatch_once_t sharedGrooveLionOnceToken;
                 NSError *error = nil;
                 id parsed = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&error];
                 if (error)
+                {
                     DLog(@"JSON reading error - %p\n%@",connection,error);
+                    DLog(@"Response as data - %p\n%@",connection,responseData);
+                    DLog(@"Response as UTF-8 string - %p\n%@",connection,[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
+                }
                 else
                     DLog(@"Response json object - %p\n%@",connection,parsed);
             }
             else
             {
+                DLog(@"Non-JSON response type - %p\n%@",connection,type);
+                DLog(@"Response as data - %p\n%@",connection,responseData);
                 NSString *bodyString = nil;
                 NSString *encodingString = connection.associatedResponse.textEncodingName;
                 NSStringEncoding encoding = NSUTF8StringEncoding;
